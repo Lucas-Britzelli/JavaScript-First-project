@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!--
+--------------------------------
+Content menu
+--------------------------------
+1. Creating navbar
+2. Hero Section
+3. Modes for cities
+------------------------------->
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <title>JavaScript Projekt</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="companyname">Lucas Exchange</div>
+<!--1. Creation of the navbar-->
+    <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exchangepage.html">Exchange</a></li>
+            <li><a href="cities.html">Cities</a></li>
+        </ul>
+    </div>
+</nav>
+<!--2. Hero Section-->
+    <section class="hero-image">
+        <div class="hero-text">
+            <h2>Which city would you like to interact with?</h2>
+        </div>
+        <div class="cities">
+            <div class="citybox">
+                <form>
+                    <div class="firstrow">
+                        <div class="City">
+                            <input id="city" type="text" placeholder="City Name">
+                        </div>
+                        <div>
+                            <!--3. Modes for cities-->
+                            <select id="modeselect" value="What would you like to do?">
+                                <option>Select your mode (not this one)</option>
+                                <option id="showcity">GET</option>
+                                <option id="updatecity">POST</option>
+                                <option id="createcity">PUT</option>
+                                <option id="removecity">DELETE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="secondrow">
+                        <div>
+                            <input id="population" type="text" placeholder="Befolkning">
+                        </div>
+                        <div>
+                            <input id="cityid" type="text" placeholder="Stadensid">
+                        </div>
+                    </div>
+                    <div class="sendbutton">
+                        <input id="submit" class="skickain" type="button" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="output">
+            <h4 id="svartext">Your city information will be shown below</h4>
+            <p id="cityanswer"></p>
+            <p id="citypopulation"></p>
+            <p id="cityidanswer"></p>
+        </div>
+    </section>
+    <footer>
+        <p class="footer">Copyright © 2022 <br> Lucas Britzelli<p>
+    </footer>
+    <script src="index2.js"></script>
+</body>
+</html>

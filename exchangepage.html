@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!--
+--------------------------------
+Content menu
+--------------------------------
+1. Creating navbar
+2. Creation of "hero section"
+3. Creating the exchange menu
+--------------------------------
+-->
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Exchangepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="companyname">Lucas Exchange</div>
+        <!--creation of the desktop navbar-->
+    <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exchangepage.html">Exchange</a></li>
+            <li><a href="cities.html">Cities</a></li>
+        </ul>
+    </div>
+</nav>
+    <!--2. Creating the "hero section"-->
+    <section class="hero-image">
+        <div class="hero-text">
+            <h2>Enter your two currencies</h2>
+        </div>
+    <!--3. Creating the exchange menu-->
+        <div class="converter">
+            <div class="currency1">
+                <select name="valutanamn" id="currencies1">
+                <option value="Choose your first currency">Choose your first currency</option>
+                </select>
+            </div>
+            <div class="amountofcurrency1">
+                <input type="number" id="amountofcurrency" min="1" max="5000">
+            </div>
+            <div class="currency2">
+                <select name="valutanamn" id="currencies2">
+                <option value="Choose your second currency">Choose your second currency</option>
+                </select>
+            </div>
+            <button id="convert" class="convert" type="button">Click me to convert!</button>
+
+        </div>
+            <div class="amountofcurrency2">
+                <p id="convertresult"></p>
+        </div>
+        <div class="graphtext">
+            <p>Your graph will show up in the white box underneath</p>
+        </div>
+        <div class="conversions">
+            <canvas id="recentcon"></canvas>
+        </div>
+    </section>
+    <footer>
+        <p class="footer">Copyright © 2022 <br> Lucas Britzelli<p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

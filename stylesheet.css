@@ -1,0 +1,194 @@
+/*
+-----------------------------------------
+Content menu
+-----------------------------------------
+1. root settings
+2. navbar config
+3. hero section
+4. moving currency boxes on currencypage
+5. media queries for responsivity
+-----------------------------------------
+*/
+
+
+/*1. Root Settings*/
+
+/*Importing the font of choise in this case Oswald*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body, html {
+    font-family: Oswald;
+    overflow-x: hidden;
+    background-image: url(/bilder/background-space.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    background-color: black;
+}
+.companyname {
+    color: white;
+}
+/*2. Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: 0 auto;
+    background: black;
+    z-index:999;
+    top:0;
+    left:0;
+}
+.companyname {
+    margin-left: 1.5rem;
+}
+.navbar-links li {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    flex-direction: row;
+}
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*3. Hero section*/
+.hero-image {
+    height:82vh;
+    position: relative;
+    margin-top: 8vh;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.footer {
+    color: white;
+}
+/*4. Moving currency menues */
+.currency1, .currency2, .amountofcurrency1, .convert  {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 25px;
+    margin-top: 25.5%;
+}
+.currency1 {
+    margin-left: 53em;
+}
+.converter {
+    display:flex;
+    margin-left: 50px;
+}
+.amountofcurrency2 {
+    margin-left: 76rem;
+    font-weight: bold;
+    font-size: large;
+}
+.conversions {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin-left: 3em;
+    background-color: white;
+}
+.graphtext {
+    color: white;
+    margin-left: 14em;
+}
+.cities {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.firstrow {
+    display: flex;
+    margin-top: 170%;
+}
+.secondrow {
+    display: flex;
+    margin-top: 10px;
+}
+.skickain {
+    margin-top: 10px;
+}
+#modeselect {
+    margin-left: 10px;
+}
+#cityid {
+    margin-left: 10px;
+}
+.output {
+    margin-left: 65%;
+}
+#convertresult {
+    color: white;
+}
+#svartext {
+    color: white;
+}
+#exchangebutton {
+    margin-left: 70px
+}
+#cityanswer, #citypopulation, #cityidanswer {
+    color: white;
+}
+
+/*5. Media queries for responsivity */
+@media screen and (min-width:1300px) and (max-width:1950px) {
+
+    .currency1, .currency2, .amountofcurrency1, .convert  {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 40rem;
+        flex-direction: column;
+    }
+    .currency1 {
+        margin-left: 25em;
+    }
+    .amountofcurrency2 {
+        margin-left: 45em;
+    }
+    
+}
+
+@media screen and (min-width:500px) and (max-width:1299px) {
+
+    .currency1, .currency2, .amountofcurrency1, .convert  {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 32rem;
+        flex-direction: column;
+    }
+    .currency1 {
+        margin-left: 1.5em;
+    }
+    .amountofcurrency2 {
+        margin-left: 22em;
+    }
+    .footer {
+        display: flex;
+        justify-content: right;
+    }
+}
